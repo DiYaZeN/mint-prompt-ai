@@ -7,17 +7,24 @@ export const metadata = {
     description : 'Find the best AI Prompts for your needs',
 } 
 
-const  layout = () => {
+interface AppProps {
+    children: React.ReactNode;
+  }
+
+const  RootLayout = ({children}:AppProps) => {
   return ( 
     <html lang = "en ">
         <body>
             <div className='main'>
-                 <div className='gradient'></div>
+                 <div className='gradient' />
             </div>
-
+            <main className='app'>
+                {children}
+            </main>
+ 
         </body> 
     </html>
   )
 } 
 
-export default  layout
+export default  RootLayout
