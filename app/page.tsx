@@ -1,4 +1,5 @@
 import React from "react";
+import Feed from "@components/Feed";
 
 const Home = () => {
   return (
@@ -12,6 +13,8 @@ const Home = () => {
         Mint-Prompt-AI is a platform that allows you to discover and share
         creative AI generated prompts.
       </p>
+
+        <Feed />
     </section>
   );
 };
