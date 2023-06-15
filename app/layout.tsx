@@ -1,6 +1,8 @@
 import React from 'react'
 import '@/styles/globals.css'
 import exp from 'constants'
+import Nav from '@components/Nav' 
+import Provider from '@components/Provider'
 
 export const metadata = {
     title: 'Mint-Prompt-AI',
@@ -19,6 +21,7 @@ const  RootLayout = ({children}:AppProps) => {
                  <div className='gradient' />
             </div>
             <main className='app'>
+                <Nav />
                 {children}
             </main>
  
